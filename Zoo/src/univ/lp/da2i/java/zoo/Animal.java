@@ -95,12 +95,10 @@ public abstract class Animal implements AnimalAction{
 	private int point;
 	
 	/**
-	 * Constructeur de Aigle
-	 * 
-	 * On utilise le constructeur de la classe mere Oiseau
+	 * Constructeur de Animal
 	 * 
 	 * @param name	
-	 * 		Le nom de l'aigle
+	 * 		Le nom de l'animal
 	 * @param poids
 	 * 		son poids
 	 * @param taille
