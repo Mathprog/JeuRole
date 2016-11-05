@@ -1,7 +1,7 @@
 package univ.lp.da2i.java.zoo;
 
 /**
- * La classe aigle représente
+ * La classe aigle reprï¿½sente
  * 
  * @author Administrateur
  * 
@@ -13,7 +13,7 @@ public abstract class Aigle extends Oiseau {
 	/**
 	 * Constructeur de Aigle
 	 * 
-	 * On utilise le constructeur de la classe mére oiseau
+	 * On utilise le constructeur de la classe mï¿½re oiseau
 	 * 
 	 * @param name	
 	 * 		Le nom de l'aigle
@@ -28,7 +28,7 @@ public abstract class Aigle extends Oiseau {
 	 * @param isSleeping
 	 * 		son indicateur de sommeil (si il dort)
 	 * @param isHealty
-	 * 		son idicateur de soin (si il est en train d'etre soigné ou non)
+	 * 		son idicateur de soin (si il est en train d'etre soignï¿½ ou non)
 	 * 
 	 */
 	public Aigle(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
@@ -36,18 +36,15 @@ public abstract class Aigle extends Oiseau {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
 		// TODO Auto-generated constructor stub
 	}
-<<<<<<< HEAD
 
 	public Aigle(Aigle aigle) {
 		super(aigle);
 	}
 
-=======
 	
 	/**
 	 * fait voler l'aigle
 	 */
->>>>>>> 57e6b6943a77d2da359beaae02a6b50ec453ad21
 	@Override
 	public void voler() {
 		System.out.println("Je vole comme un aigle !");
