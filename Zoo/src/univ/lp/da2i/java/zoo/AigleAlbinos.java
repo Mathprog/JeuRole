@@ -2,7 +2,7 @@ package univ.lp.da2i.java.zoo;
 
 
 /**
- * la classe AigleAlbinos represente un type d'aigle decore
+ * la classe AigleAlbinos represente un type d'aigle albinos
  * 
  * @author Administrateur
  *

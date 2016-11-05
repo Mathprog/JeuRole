@@ -29,7 +29,6 @@ public abstract class Aigle extends Oiseau {
 	 * 		son indicateur de sommeil (si il dort)
 	 * @param isHealty
 	 * 		son idicateur de soin (si il est en train d'etre soigne ou non)
-	 * 
 	 */
 	public Aigle(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
 			boolean isHealthy) {
