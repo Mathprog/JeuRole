@@ -13,7 +13,7 @@ public abstract class Aigle extends Oiseau {
 	/**
 	 * Constructeur de Aigle
 	 * 
-	 * On utilise le constructeur de la classe mere oiseau
+	 * On utilise le constructeur de la classe mere Oiseau
 	 * 
 	 * @param name	
 	 * 		Le nom de l'aigle
@@ -39,6 +39,12 @@ public abstract class Aigle extends Oiseau {
 	
 	/**
 	 * constructeur par recopie
+	 * On utilise le constructeur de la classe mere Oiseau
+	 * 
+	 * @param aigle
+	 * 		L'object aigle que l'on copie
+	 * 
+	 * @see Aigle
 	 */
 	public Aigle(Aigle aigle) {
 		super(aigle);
@@ -66,7 +72,7 @@ public abstract class Aigle extends Oiseau {
 	 */
 	@Override
 	public void emettreUnSon() {
-		System.out.println("J'émet un son comme un aigle");
+		System.out.println("J'emet un son comme un aigle");
 
 	}
 	/**
@@ -85,7 +91,7 @@ public abstract class Aigle extends Oiseau {
 	 */
 	@Override
 	public void changeEtat(boolean b) {
-		System.out.println("Je change d'état");
+		System.out.println("Je change d'etat");
 		this.setSleeping(b);
 	}
 
