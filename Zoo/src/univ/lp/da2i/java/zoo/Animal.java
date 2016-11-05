@@ -11,9 +11,6 @@ package univ.lp.da2i.java.zoo;
 
 public abstract class Animal implements AnimalAction{
 	
-	/**
-	 * A FAIRE
-	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

@@ -17,7 +17,7 @@ public abstract class Baleine extends AnimalMarin implements MammifereAction{
 	 * On utilise le constructeur de la classe mere AnimalMarin
 	 * 
 	 * @param name	
-	 * 		Le nom de l'aigle
+	 * 		Le nom de la baleine
 	 * @param poids
 	 * 		son poids
 	 * @param taille

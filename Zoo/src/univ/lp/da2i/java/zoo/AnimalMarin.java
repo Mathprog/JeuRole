@@ -16,7 +16,7 @@ public abstract class AnimalMarin extends Animal implements AnimalMarinAction{
 	 * On utilise le constructeur de la classe mere Animal
 	 * 
 	 * @param name	
-	 * 		Le nom de l'aigle
+	 * 		Le nom de l'animal
 	 * @param poids
 	 * 		son poids
 	 * @param taille
