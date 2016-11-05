@@ -90,7 +90,7 @@ public abstract class Animal implements AnimalAction{
 	 */
 	protected boolean isHealthy;
 	/**
-	 * ?
+	 * valeur en point de l'animal
 	 */
 	private int point;
 	
@@ -114,6 +114,7 @@ public abstract class Animal implements AnimalAction{
 	 * @param isHealty
 	 * 		son idicateur de soin (si il est en train d'etre soigne ou non)
 	 * @param point
+	 * 		sa valeur en point
 	 * 
 	 */
 	public Animal(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping, boolean isHealthy, int point) {
@@ -129,13 +130,15 @@ public abstract class Animal implements AnimalAction{
 	}
 	
 	/**
-	 * 
+	 * retourne la valeur en point de l'animal
+	 * @return la valeur en point, sous la forme d'un entier positif
 	 */
 	public int getPoint() {
 		return point;
 	}
 	/**
-	 * 
+	 * @param point
+	 * 		la nouvelle valeur en point de l'animal
 	 */
 	public void setPoint(int point) {
 		this.point = point;
