@@ -3,7 +3,7 @@ package univ.lp.da2i.java.zoo;
  * La classe OursonFemale reprsente l'ourson femmelle
  * 
  * @author Administrateur
- *
+ * @see Bebe
  */
 public class OursonFemale extends Ours implements Bebe{
 	/**

@@ -5,7 +5,7 @@ public class OursonMale extends Ours implements Bebe{
 	 * La classe OursonMale reprsente l'ourson male
 	 * 
 	 * @author Administrateur
-	 *
+	 * @see Bebe
 	 */
 
 	public OursonMale(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
