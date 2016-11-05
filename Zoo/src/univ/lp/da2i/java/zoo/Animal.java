@@ -53,8 +53,9 @@ public abstract class Animal implements AnimalAction{
 	protected boolean isHungry;
 	protected boolean isSleeping;
 	protected boolean isHealthy;
+	private int point;
 	
-	public Animal(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping, boolean isHealthy) {
+	public Animal(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping, boolean isHealthy, int point) {
 		super();
 		this.name = name;
 		this.poids = poids;
@@ -63,6 +64,26 @@ public abstract class Animal implements AnimalAction{
 		this.isHungry = isHungry;
 		this.isSleeping = isSleeping;
 		this.isHealthy = isHealthy;
+		this.point = point;
+	}
+	
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	public Animal(Animal animal){
+		this.name = animal.getName();
+		this.poids = animal.getPoids();
+		this.taille = animal.getTaille();
+		this.age = animal.getAge();
+		this.isHungry = animal.isHungry();
+		this.isSleeping = animal.isSleeping();
+		this.isHealthy = animal.isHealthy();
+		this.point = animal.getPoint();
 	}
 	
 	public String getName() {

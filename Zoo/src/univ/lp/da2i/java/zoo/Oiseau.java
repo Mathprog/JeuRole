@@ -8,4 +8,8 @@ public abstract class Oiseau extends Ovipare implements OiseauAction{
 		// TODO Auto-generated constructor stub
 	}
 
+	public Oiseau(Oiseau oiseau) {
+		super(oiseau);
+	}
+
 }

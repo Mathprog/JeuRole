@@ -7,10 +7,10 @@ public class Zoo <T extends Animal>{
 	private String name;
 	private Employe<T> employe;
 	private int maxNbEnclos;
-	private ArrayList<Enclos> listeEnclos;
+	private ArrayList<Enclos<T>> listeEnclos;
 	private double prix = 10000.0;
 	
-	public Zoo(String name, Employe<T> employe, int maxNbEnclos, ArrayList<Enclos> tousEnclos) {
+	public Zoo(String name, Employe<T> employe, int maxNbEnclos, ArrayList<Enclos<T>> tousEnclos) {
 		super();
 		this.name = name;
 		this.employe = employe;
@@ -34,6 +34,13 @@ public class Zoo <T extends Animal>{
 		}
 	}
 
+	public void addEnclos(Enclos<T> newEnclo){
+		if(this.maxNbEnclos < this.listeEnclos.size()){
+			this.listeEnclos.add(newEnclo);
+		} else {
+			System.out.println("Vous avez trop d'enclos. Il faut créer un nouveau ZOO.");
+		}
+	}
 	
 	public String getName() {
 		return name;
@@ -59,11 +66,11 @@ public class Zoo <T extends Animal>{
 		this.maxNbEnclos = maxNbEnclos;
 	}
 
-	public ArrayList<Enclos> getListeEnclos() {
+	public ArrayList<Enclos<T>> getListeEnclos() {
 		return listeEnclos;
 	}
 
-	public void setListeEnclos(ArrayList<Enclos> listeEnclos) {
+	public void setListeEnclos(ArrayList<Enclos<T>> listeEnclos) {
 		this.listeEnclos = listeEnclos;
 	}
 }

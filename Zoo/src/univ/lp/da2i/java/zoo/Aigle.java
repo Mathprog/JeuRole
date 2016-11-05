@@ -8,6 +8,10 @@ public abstract class Aigle extends Oiseau {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Aigle(Aigle aigle) {
+		super(aigle);
+	}
+
 	@Override
 	public void voler() {
 		System.out.println("Je vole comme un aigle !");
