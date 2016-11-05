@@ -39,14 +39,4 @@ public abstract class Baleine extends AnimalMarin implements MammifereAction{
 		
 	}
 
-	@Override
-	public void accouche() {
-		if(this.sexe.equals("MALE")){
-			System.out.println("J'accouche !");
-		} else {
-			System.out.println("JE SUIS UN MEC !!");
-		}
-		
-	}
-
 }

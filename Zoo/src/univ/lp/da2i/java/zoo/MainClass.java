@@ -30,8 +30,8 @@ public class MainClass {
 		voiliereAnim.add(aigle);
 		voiliereAnim.add(pingouin);
 		
-		BabyAnimalsFactory BAF = new BabyAnimalFactory();
-		TigreauFemale bebetigre = 
+		BabyAnimalsFactory BAF = new BabyAnimalsFactory();
+		TigreauFemale bebetigre = BAF.getBaby(dad, mother)
 
 
 		Aquarium<AnimalMarin> aquariumEnclo = new Aquarium<AnimalMarin>("Aquatique", 200, 10, 5, aquarium, Enclos.PROPRETES[0], 100, Aquarium.SALINITEVALUE[1]);
