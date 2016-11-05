@@ -6,6 +6,7 @@ public class Voliere <T extends Oiseau> extends Enclos<T>{
 	
 	
 	protected int hauteur;
+	private double prix = 1100.0;
 	
 	public Voliere(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
 			String propreteDegres, int hauteur) {

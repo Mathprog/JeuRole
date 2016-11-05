@@ -8,7 +8,7 @@ public class Aquarium <T extends AnimalMarin> extends Enclos<T>{
 	
 	protected double profondeur;
 	protected String salinite;
-	
+	private double prix = 1300.0;
 	
 	public Aquarium(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
 			String propreteDegres, double profondeur, String salinite) {
@@ -19,6 +19,7 @@ public class Aquarium <T extends AnimalMarin> extends Enclos<T>{
 
 	public void entretenir(){
 		System.out.println("Entretien de l'Aquarium");
+		this.propreteDegres = Enclos.PROPRETES[0];
 	}
 
 	public double getProfondeur() {

@@ -8,6 +8,7 @@ public class Zoo <T extends Animal>{
 	private Employe<T> employe;
 	private int maxNbEnclos;
 	private ArrayList<Enclos> listeEnclos;
+	private double prix = 10000.0;
 	
 	public Zoo(String name, Employe<T> employe, int maxNbEnclos, ArrayList<Enclos> tousEnclos) {
 		super();

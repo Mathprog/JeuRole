@@ -2,7 +2,11 @@ package univ.lp.da2i.java.zoo;
 
 import java.util.ArrayList;
 
-public class MainClass {
+public class Jeu {
+	
+	public String saison;
+	public int jour;
+	
 	public static void main(String[] arvs){
 		Baleine baleine = new BaleineFemale("Bubulla", 12.0, 3, 4, false, false, true);
 		Tigres tigre = new TigreFemale("Gragra", 0.5, 2, 2, false, false, true);

@@ -12,6 +12,7 @@ public class Enclos <T extends Animal> {
 	protected int nbDAnimauxPresents;
 	protected ArrayList<T> allAnimals;
 	protected String propreteDegres;
+	private double prix = 800.0;
 	
 	public Enclos(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
 			String propreteDegres) {
@@ -32,11 +33,23 @@ public class Enclos <T extends Animal> {
 	}
 	
 	public void addAnimal(T newAnimal){
-		this.allAnimals.add(newAnimal);
+		if(this.nbDAnimauxPresents < 10){
+			this.allAnimals.add(newAnimal);
+			this.nbDAnimauxPresents++;
+		} else {
+			System.out.println("Vous ne pouvez plus ajouter d'animaux. Veuillez construire un nouvel enclos.");
+		}
+		
 	}
 	
 	public void deleteAnimal(T animal){
-		this.allAnimals.remove(animal);
+		if(this.allAnimals.contains(animal)){
+			this.allAnimals.remove(animal);
+			this.nbDAnimauxPresents--;
+		} else {
+			System.out.println("Animal non présent dans l'enclo. ");
+		}
+		
 	}
 	
 	public void nourrirAnimaux(){
@@ -47,6 +60,7 @@ public class Enclos <T extends Animal> {
 	
 	public void entretenir(){
 		System.out.println("J'entretien l'enclo standard");
+		this.propreteDegres = Enclos.PROPRETES[0];
 	}
 
 	public String getNom() {
