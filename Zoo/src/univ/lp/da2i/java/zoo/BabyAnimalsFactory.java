@@ -1,6 +1,6 @@
 package univ.lp.da2i.java.zoo;
 
-public class BabyAnimalsFactory extends IBabyAnimalsFactory {
+public class BabyAnimalsFactory implements IBabyMaleAnimalFactory {
 
 	@Override
 	public Animal getBaby(Animal dad, Animal mother) {

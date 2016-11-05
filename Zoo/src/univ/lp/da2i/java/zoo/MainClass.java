@@ -29,6 +29,9 @@ public class MainClass {
 		ArrayList<Oiseau> voiliereAnim = new ArrayList<Oiseau>();
 		voiliereAnim.add(aigle);
 		voiliereAnim.add(pingouin);
+		
+		BabyAnimalsFactory BAF = new BabyAnimalFactory();
+		TigreauFemale bebetigre = 
 
 
 		Aquarium<AnimalMarin> aquariumEnclo = new Aquarium<AnimalMarin>("Aquatique", 200, 10, 5, aquarium, Enclos.PROPRETES[0], 100, Aquarium.SALINITEVALUE[1]);
