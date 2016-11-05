@@ -1,7 +1,7 @@
 package univ.lp.da2i.java.zoo;
 
 /**
- * La classe aigle repr�sente
+ * La classe aigle reprsente l'oiseau aigle
  * 
  * @author Administrateur
  * 
@@ -13,7 +13,7 @@ public abstract class Aigle extends Oiseau {
 	/**
 	 * Constructeur de Aigle
 	 * 
-	 * On utilise le constructeur de la classe m�re oiseau
+	 * On utilise le constructeur de la classe mere oiseau
 	 * 
 	 * @param name	
 	 * 		Le nom de l'aigle
@@ -28,7 +28,7 @@ public abstract class Aigle extends Oiseau {
 	 * @param isSleeping
 	 * 		son indicateur de sommeil (si il dort)
 	 * @param isHealty
-	 * 		son idicateur de soin (si il est en train d'etre soign� ou non)
+	 * 		son idicateur de soin (si il est en train d'etre soigne ou non)
 	 * 
 	 */
 	public Aigle(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
@@ -36,7 +36,10 @@ public abstract class Aigle extends Oiseau {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	/**
+	 * constructeur par recopie
+	 */
 	public Aigle(Aigle aigle) {
 		super(aigle);
 	}
