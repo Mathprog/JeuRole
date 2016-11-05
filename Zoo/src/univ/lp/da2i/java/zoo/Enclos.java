@@ -11,9 +11,18 @@ public class Enclos <T extends Animal> {
 	protected int maxAnimaux;
 	protected int nbDAnimauxPresents;
 	protected ArrayList<T> allAnimals;
+	protected ArrayList<Bebe> allBebeAnimals;
 	protected String propreteDegres;
 	private double prix = 800.0;
 	
+	/**
+	 * @param nom
+	 * @param superficie
+	 * @param maxAnimaux
+	 * @param nbDAnimauxPresents
+	 * @param allAnimals
+	 * @param propreteDegres
+	 */
 	public Enclos(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
 			String propreteDegres) {
 		super();
@@ -25,12 +34,20 @@ public class Enclos <T extends Animal> {
 		this.propreteDegres = propreteDegres;
 	}
 
+	/**
+	 * 
+	 */
 	@Override // A finir
 	public String toString() {
 		return "Enclos [nom=" + nom + ", superficie=" + superficie + ", maxAnimaux=" + maxAnimaux
 				+ ", nbDAnimauxPresents=" + nbDAnimauxPresents + ", allAnimals=" + allAnimals + ", propreteDegres="
 				+ propreteDegres + "]";
 	}
+	
+	/**
+	 * 
+	 * @param newAnimal
+	 */
 	
 	public void addAnimal(T newAnimal){
 		if(this.nbDAnimauxPresents < 10){
@@ -50,6 +67,18 @@ public class Enclos <T extends Animal> {
 			System.out.println("Animal non présent dans l'enclo. ");
 		}
 		
+	}
+	
+	public void addBebeAnimal(Bebe newAnimal){
+		this.allBebeAnimals.add(newAnimal);
+	}
+	
+	public void deleteBebeAnimal(Bebe animal){
+		if(this.allBebeAnimals.contains(animal)){
+			this.allBebeAnimals.remove(animal);
+		} else {
+			System.out.println("Bebe Animal non présent dans l'enclo. ");
+		}
 	}
 	
 	public void nourrirAnimaux(){
