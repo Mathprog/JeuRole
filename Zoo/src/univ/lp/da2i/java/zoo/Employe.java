@@ -19,11 +19,8 @@ public class Employe <T extends Animal>{
 	}
 	
 	public void nettoyerEnclo(Enclos<? extends T> enclo){
-		
-		System.out.println(enclo.getPropreteDegres());
 		System.out.println("Je nettoye l'enclo.");
-		enclo.setPropreteDegres("SALE");
-		System.out.println(enclo.getPropreteDegres());
+		enclo.setPropreteDegres("PROPRE");
 	}
 	
 	public void nourrirAnimauxEnclo(Enclos<? extends T> enclo){

@@ -5,6 +5,4 @@ public interface AnimalAction {
 	public void emettreUnSon();
 	public void etreSoigne();
 	public void changeEtat(boolean b);
-	public void grandir();
-	public void grossir();
 }
