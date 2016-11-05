@@ -1,7 +1,7 @@
 package univ.lp.da2i.java.zoo;
 
 /**
- * La classe aigle reprsente l'oiseau aigle
+ * La classe Aigle reprsente l'oiseau aigle
  * 
  * @author Administrateur
  * 
