@@ -11,6 +11,11 @@ import java.util.ArrayList;
  *
  */
 public class Aquarium <T extends AnimalMarin> extends Enclos<T>{
+	
+	@Override
+	public String toString() {
+		return "Aquarium [profondeur=" + profondeur + ", salinite=" + salinite + ", prix=" + prix + "] " + super.toString();
+	}
 	/**
 	 * Le degre de salinite de l'aquarium
 	 */

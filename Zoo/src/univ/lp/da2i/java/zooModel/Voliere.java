@@ -67,5 +67,11 @@ public class Voliere <T extends Oiseau> extends Enclos<T>{
 	public void setHauteur(int hauteur) {
 		this.hauteur = hauteur;
 	}
+	@Override
+	public String toString() {
+		return "Voliere [hauteur=" + hauteur + ", prix=" + prix + "] " + super.toString();
+	}
+	
+	
 
 }

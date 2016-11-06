@@ -48,12 +48,11 @@ public class Zoo <T extends Animal>{
 	 *  
 	 */
 	
-	public Zoo(String name, Employe<T> employe, int maxNbEnclos, ArrayList<Enclos<T>> tousEnclos) {
+	public Zoo(String name, int maxNbEnclos) {
 		super();
 		this.name = name;
-		this.employe = employe;
 		this.maxNbEnclos = maxNbEnclos;
-		this.listeEnclos = tousEnclos;
+		this.listeEnclos = new ArrayList<Enclos<T>>();
 	}
 	/**
 	 * affiche tout les annimaux du zoo

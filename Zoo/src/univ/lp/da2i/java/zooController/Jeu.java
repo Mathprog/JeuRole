@@ -1,6 +1,8 @@
-package univ.lp.da2i.java.zooModel;
+package univ.lp.da2i.java.zooController;
 
 import java.util.Scanner;
+
+import univ.lp.da2i.java.zooModel.Zoo;
 
 public class Jeu {
 	
@@ -21,5 +23,34 @@ public class Jeu {
 		System.out.println("C'est parti. Donnez un nom à votre ZOO :");
 		Scanner in = new Scanner(System.in);
 		String zooName = in.nextLine();
+		Zoo zoo = new Zoo(zooName, 10);
+		System.out.println("Votre Zoo : " + zooName + " à été crée. Maintenant il faut lui attribuer un employé.");
+		System.out.println("Nom de votre emplyé : ");
+		String employeName = in.nextLine();
+		System.out.println("Veuillez saisir le sexe de votre employé : ");
+		System.out.println("1. Je sais pas");
+		System.out.println("2. Homme");
+		System.out.println("3. Femme");
+		System.out.println("4. D, la réponse D");
+		int sexeIndex = in.nextInt();
+		String sexe = "";
+		switch (sexeIndex){
+		case 1:
+			sexe = "Inconnu";
+			break;
+		case 2:
+			sexe = "Homme";
+			break;
+		case 3:
+			sexe = "Femme";
+			break;
+		case 4:
+			sexe="D, la réponse D";
+			break;
+			default:
+				sexe ="Il se fou de moi ...";
+				break;
+		}
+		System.out.println(sexe);
 	}
 }

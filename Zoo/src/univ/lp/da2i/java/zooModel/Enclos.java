@@ -74,16 +74,11 @@ public class Enclos <T extends Animal> {
 		this.propreteDegres = propreteDegres;
 	}
 
-	/**
-	 * retourne les infos de l'enclos
-	 * 
-	 * @return les infos de l'enclos sous la forme d'une chaine de caracteres
-	 */
-	@Override // A finir
+	@Override
 	public String toString() {
 		return "Enclos [nom=" + nom + ", superficie=" + superficie + ", maxAnimaux=" + maxAnimaux
-				+ ", nbDAnimauxPresents=" + nbDAnimauxPresents + ", allAnimals=" + allAnimals + ", propreteDegres="
-				+ propreteDegres + "]";
+				+ ", nbDAnimauxPresents=" + nbDAnimauxPresents + ", allAnimals=" + allAnimals + ", allBebeAnimals="
+				+ allBebeAnimals + ", propreteDegres=" + propreteDegres + ", prix=" + prix + "]";
 	}
 	
 	/**
