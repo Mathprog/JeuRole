@@ -2,15 +2,20 @@ package univ.lp.da2i.java.zooController;
 
 import java.util.Scanner;
 
+import univ.lp.da2i.java.zooModel.Aigle;
+import univ.lp.da2i.java.zooModel.AigleFemale;
+import univ.lp.da2i.java.zooModel.AigleMale;
 import univ.lp.da2i.java.zooModel.Animal;
 import univ.lp.da2i.java.zooModel.Aquarium;
 import univ.lp.da2i.java.zooModel.Baleine;
+import univ.lp.da2i.java.zooModel.BaleineFemale;
 import univ.lp.da2i.java.zooModel.BaleineMale;
 import univ.lp.da2i.java.zooModel.Employe;
 import univ.lp.da2i.java.zooModel.Enclos;
 import univ.lp.da2i.java.zooModel.Ours;
 import univ.lp.da2i.java.zooModel.OursFemale;
 import univ.lp.da2i.java.zooModel.OursMale;
+import univ.lp.da2i.java.zooModel.Voliere;
 import univ.lp.da2i.java.zooModel.Zoo;
 
 public class Jeu {
@@ -77,12 +82,19 @@ public class Jeu {
 		
 		Aquarium<Baleine> baleineAquarium = new Aquarium<Baleine>("Baleine", 1000.0, 12, 0, Enclos.PROPRETES[0], 220.0, Aquarium.SALINITEVALUE[0]);
 		BaleineMale unBaleine = new BaleineMale ("BigBog", 1003.0, 3.0, 9, false, true, true);
-		BaleineMale uneBaleine = new BaleineMale ("BigBaga", 950.0, 2.7, 10, false, true, true);
+		BaleineFemale uneBaleine = new BaleineFemale ("BigBaga", 950.0, 2.7, 10, false, true, true);
 		
 		baleineAquarium.addAnimal(unBaleine);
 		baleineAquarium.addAnimal(uneBaleine);
 		zoo.addEnclos(baleineAquarium);
+		
+		Voliere<Aigle> aigleVoliere = new Voliere<Aigle>("Aigle", 600.0, 12, 0, Enclos.PROPRETES[0], 75);
+		AigleMale unAigle = new AigleMale ("Flyflo", 12.0, 0.8, 8, false, true, true);
+		AigleFemale uneAigle = new AigleFemale ("Flyfla", 11.0, 0.8, 8, false, true, true);
 
+		aigleVoliere.addAnimal(unAigle);
+		aigleVoliere.addAnimal(uneAigle);
+		zoo.addEnclos(aigleVoliere);
 		
 	}
 }
