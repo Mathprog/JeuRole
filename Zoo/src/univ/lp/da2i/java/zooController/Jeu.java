@@ -17,6 +17,8 @@ import univ.lp.da2i.java.zooModel.OursFemale;
 import univ.lp.da2i.java.zooModel.OursMale;
 import univ.lp.da2i.java.zooModel.Voliere;
 import univ.lp.da2i.java.zooModel.Zoo;
+import univ.lp.da2i.java.zooVue.GUIAquarium;
+import univ.lp.da2i.java.zooVue.GUIEnclos;
 
 public class Jeu {
 	
@@ -96,5 +98,11 @@ public class Jeu {
 		aigleVoliere.addAnimal(uneAigle);
 		zoo.addEnclos(aigleVoliere);
 		
+		System.out.println("Votre Zoo contient :");
+		GUIEnclos affichageEnclo = new GUIEnclos();
+		affichageEnclo.afficherEnclos(enclosOurs);
+		
+		GUIAquarium affichageAquarium = new GUIAquarium();
+		affichageAquarium.afficherAquariumCarac(baleineAquarium);
 	}
 }

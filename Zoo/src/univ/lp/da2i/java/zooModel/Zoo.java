@@ -80,7 +80,9 @@ public class Zoo <T extends Animal>{
 	 * 		l'enclos a ajouter au zoo, si il reste de la place
 	 */
 	public void addEnclos(Enclos newEnclo){
-		if(this.maxNbEnclos < this.listeEnclos.size()){
+		System.out.println(this.maxNbEnclos);
+		System.out.println(this.listeEnclos.size());
+		if(this.maxNbEnclos >= this.listeEnclos.size()){
 			this.listeEnclos.add(newEnclo);
 		} else {
 			System.out.println("Vous avez trop d'enclos. Il faut créer un nouveau ZOO.");
