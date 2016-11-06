@@ -108,5 +108,17 @@ public class Jeu {
 		
 		GUIVoliere affichageVoliere = new GUIVoliere();
 		affichageVoliere.afficherAquariumCarac(aigleVoliere);
+		
+		System.out.println("Nous allons faire une démonstration des fonctionnalités qui auraient été utilisées. ");
+		
+		System.out.println("L'employé peut nettoyer un enclos : ");
+		employe.nettoyerEnclo(enclosOurs);
+		System.out.println("L'employé peut nourrir des animaux d'un enclo : ");
+		employe.nourrirAnimauxEnclo(aigleVoliere);
+		System.out.println("L'employé peut examiner un enclos : ");
+		employe.examinerEnclo(baleineAquarium);
+		
+		System.out.println("L'objectif était de pouvoir faire évoluer un enfant animal en animal adulte via une factory.");
+		System.out.println("Le décorateur avait pour but de rendre les animaux spéciaux afin d'attirer plus de visiteur et de générer plus de sous.");
 	}
 }

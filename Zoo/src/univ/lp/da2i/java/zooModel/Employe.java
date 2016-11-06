@@ -18,9 +18,9 @@ public class Employe <T extends Animal>{
 		this.age = age;
 	}
 
-	public void examinerEnclo(Enclos<T> enclo){
+	public void examinerEnclo(Aquarium baleineAquarium){
 		System.out.println("Examination de l'enco, celui-ci est: ");
-		System.out.println(enclo.getPropreteDegres());
+		System.out.println(baleineAquarium.getPropreteDegres());
 	}
 	
 	public void nettoyerEnclo(Enclos<? extends T> enclo){
