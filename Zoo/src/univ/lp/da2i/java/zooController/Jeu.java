@@ -67,8 +67,9 @@ public class Jeu {
 		System.out.println("Nous allons maintenant générer votre environnement de départ. Veuillez patientez..");
 		Enclos<Ours> enclosOurs = new Enclos<Ours>("Ours", 500.0, 12, 0, Enclos.PROPRETES[0]);
 		OursMale grours = new OursMale("Grartin Grevot", 450.0, 2.10, 12, false, true, true);
-		OursFemale groursone = new OursFemale ("Grartin Grevot", 450.0, 2.10, 12, false, true, true);
+		OursFemale groursone = new OursFemale ("Gartine Groche", 450.0, 2.10, 12, false, true, true);
 		enclosOurs.addAnimal(groursone);
 		enclosOurs.addAnimal(grours);
+		zoo.addEnclos(enclosOurs);
 	}
 }
