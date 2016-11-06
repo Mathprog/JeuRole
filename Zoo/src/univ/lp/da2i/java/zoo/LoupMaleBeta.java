@@ -32,7 +32,10 @@ public class LoupMaleBeta extends LoupMale implements LoupBeta {
 	public LoupMaleBeta(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
 			boolean isHealthy) {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
-		// TODO Auto-generated constructor stub
+		this.rang = 2;
+		this.niveau =1;
+		this.facteurDeDomination = 2;
+		this.facteurImpetuosite = 2;
 	}
 
 }

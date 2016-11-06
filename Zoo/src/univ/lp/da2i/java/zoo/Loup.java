@@ -14,28 +14,28 @@ public abstract class Loup extends Predateurs {
 	/**
 	 * force du loup
 	 */
-	private int force;
+	protected int force;
 	/**
 	 * facteur de domination du loup
 	 */
-	private int facteurDeDomination;
+	protected int facteurDeDomination;
 	/**
 	 * rang du loup
 	 */
-	private int rang;
+	protected int rang;
 	/**
 	 * niveau du loup
 	 */
-	private int niveau;
+	protected int niveau;
 	/**
 	 * facteur d'impetuosite du loup
 	 * 
 	 */
-	private int facteurImpetuosite;
+	protected int facteurImpetuosite;
 	/**
 	 * la meute a qui apartien le loup
 	 */
-	private Meute meute;
+	protected Meute meute;
 
 	/**
 	 * Constructeur de Loup

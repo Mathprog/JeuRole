@@ -29,11 +29,13 @@ public class LoupMaleOmega extends LoupMale implements LoupOmega {
 	 * 
 	 */
 
-
 	public LoupMaleOmega(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
 			boolean isHealthy) {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
-		// TODO Auto-generated constructor stub
+		this.rang = 1;
+		this.niveau =1;
+		this.facteurDeDomination = 1;
+		this.facteurImpetuosite = 1;
 	}
 
 }

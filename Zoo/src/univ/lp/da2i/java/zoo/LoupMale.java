@@ -30,12 +30,20 @@ public abstract class LoupMale extends Loup implements Dominable{
 	public LoupMale(String name, double poids, double taille, int age, boolean isHungry, boolean isSleeping,
 			boolean isHealthy) {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	@Override
 	public void dominer(Loup loup){
-		
+		if (this.facteurImpetuosite <= loup.getFacteurImpetuosite()){
+			if(this.rang > loup.getRang() || loup.getRang() == 1){
+				this.facteurDeDomination++;
+				loup.setFacteurDeDomination(loup.getFacteurDeDomination() - 1);
+			}
+			
+		} else {
+			System.out.println("Ce loup ne peut pas défier celui-ci");
+		}
 	}
 
 }
