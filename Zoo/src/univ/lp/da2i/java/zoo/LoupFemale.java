@@ -9,7 +9,7 @@ package univ.lp.da2i.java.zoo;
  * @see FemaleMammifere
  *
  */
-public class LoupFemale extends Loup implements Bebe, FemaleMammifere{
+public class LoupFemale extends Loup implements FemaleMammifere{
 	/**
 	 * Constructeur de LoupFemale
 	 * 
@@ -35,20 +35,6 @@ public class LoupFemale extends Loup implements Bebe, FemaleMammifere{
 		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * ?
-	 */
-	@Override
-	public void grandir() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void grossir() {
-		// TODO Auto-generated method stub
-		
-	}
 	/**
 	 * fait mettre a bas
 	 */
