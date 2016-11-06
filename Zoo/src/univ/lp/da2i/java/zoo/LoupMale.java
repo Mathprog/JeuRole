@@ -32,7 +32,10 @@ public abstract class LoupMale extends Loup implements Dominable{
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
 		
 	}
-	
+	/**
+	 * tentative de domination d'un autre loup
+	 * 
+	 */
 	@Override
 	public void dominer(Loup loup){
 		if (this.facteurImpetuosite <= loup.getFacteurImpetuosite()){
@@ -42,7 +45,7 @@ public abstract class LoupMale extends Loup implements Dominable{
 			}
 			
 		} else {
-			System.out.println("Ce loup ne peut pas défier celui-ci");
+			System.out.println("Ce loup ne peut pas defier celui-ci");
 		}
 	}
 

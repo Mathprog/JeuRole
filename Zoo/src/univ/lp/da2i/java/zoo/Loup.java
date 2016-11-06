@@ -33,7 +33,7 @@ public abstract class Loup extends Predateurs {
 	 */
 	protected int facteurImpetuosite;
 	/**
-	 * la meute a qui apartien le loup
+	 * la meute a qui apartient le loup
 	 */
 	protected Meute meute;
 
@@ -71,50 +71,90 @@ public abstract class Loup extends Predateurs {
 			System.out.println("Le loup meurt de vieillesse ...");
 		}
 	}
+	/**
+	 * retourne la force du loup
+	 * @return la force du loup, sous la forme d'un entier 
+	 */
 	public int getForce() {
 		return force;
 	}
-
+	/**
+	 * @param force
+	 * 		la nouvelle valeur de force du loup
+	 */
 	public void setForce(int force) {
 		this.force = force;
 	}
-
+	/**
+	 * retourne le facteurDeDomination du loup
+	 * @return le facteurDeDomination du loup, sous la forme d'un entier
+	 */
 	public int getFacteurDeDomination() {
 		return facteurDeDomination;
 	}
-
+	/**
+	 * @param facteurDeDomination
+	 * 		le nouveau facteur de domination du loup
+	 */
 	public void setFacteurDeDomination(int facteurDeDomination) {
 		this.facteurDeDomination = facteurDeDomination;
 	}
-
+	/**
+	 * retourne le rang du loup
+	 * @return le rang du loup, sous la forme d'un entier
+	 */
 	public int getRang() {
 		return rang;
 	}
+	/**
+	 * @param rang
+	 * 		le nouveau rang du loup
+	 */
 
 	public void setRang(int rang) {
 		this.rang = rang;
 	}
-
+	/**
+	 * retourne le niveau du loup
+	 * @return le niveau du loup, sous la forme d'un entier
+	 */
 	public int getNiveau() {
 		return niveau;
 	}
+	/**
+	 * @param niveau
+	 * 		le nouveau niveau du loup
+	 */
 
 	public void setNiveau(int niveau) {
 		this.niveau = niveau;
 	}
-
+	/**
+	 * retourne le facteur d'Impetuosite du loup
+	 * @return le facteurImpetuosite du loup, sous la forme d'un entier
+	 */
 	public int getFacteurImpetuosite() {
 		return facteurImpetuosite;
 	}
+	/**
+	 * @param facteurImpetuosite
+	 * 		le nouveau facteur d'impetuosite du loup
+	 */
 
 	public void setFacteurImpetuosite(int facteurImpetuosite) {
 		this.facteurImpetuosite = facteurImpetuosite;
 	}
-
+	/**
+	 * retourne la meute du loup
+	 * @return la meute du loup, sous la forme d'un objet meute
+	 */
 	public Meute getMeute() {
 		return meute;
 	}
-
+	/**
+	 * @param meute
+	 * 		la nouvelle meute du loup
+	 */
 	public void setMeute(Meute meute) {
 		this.meute = meute;
 	}
@@ -172,7 +212,11 @@ public abstract class Loup extends Predateurs {
 		System.out.println("Je change l'etat de l'animal");
 		this.setSleeping(b);
 	}
-	
+	/**
+	 * entend un hurlement
+	 * @param	hurlement
+	 * 		hurlement entendu
+	 */
 	public void entendreHurlement(String hurlement){
 		System.out.println("J'entends un hurlement !! " + hurlement);
 	}
