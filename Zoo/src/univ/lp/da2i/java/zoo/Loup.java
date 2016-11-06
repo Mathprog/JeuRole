@@ -70,6 +70,54 @@ public abstract class Loup extends Predateurs {
 			System.out.println("Le loup meurt de vieillesse ...");
 		}
 	}
+	public int getForce() {
+		return force;
+	}
+
+	public void setForce(int force) {
+		this.force = force;
+	}
+
+	public int getFacteurDeDomination() {
+		return facteurDeDomination;
+	}
+
+	public void setFacteurDeDomination(int facteurDeDomination) {
+		this.facteurDeDomination = facteurDeDomination;
+	}
+
+	public int getRang() {
+		return rang;
+	}
+
+	public void setRang(int rang) {
+		this.rang = rang;
+	}
+
+	public int getNiveau() {
+		return niveau;
+	}
+
+	public void setNiveau(int niveau) {
+		this.niveau = niveau;
+	}
+
+	public int getFacteurImpetuosite() {
+		return facteurImpetuosite;
+	}
+
+	public void setFacteurImpetuosite(int facteurImpetuosite) {
+		this.facteurImpetuosite = facteurImpetuosite;
+	}
+
+	public Meute getMeute() {
+		return meute;
+	}
+
+	public void setMeute(Meute meute) {
+		this.meute = meute;
+	}
+
 	/**
 	 * retourne les informations du loup
 	 * @return les informations du loup, sous la forme d'une chaine de caracteres

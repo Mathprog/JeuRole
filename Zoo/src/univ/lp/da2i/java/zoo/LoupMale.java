@@ -7,7 +7,7 @@ package univ.lp.da2i.java.zoo;
  * @see Loup
  *
  */
-public class LoupMale extends Loup {
+public abstract class LoupMale extends Loup implements Dominable{
 	/**
 	 * Constructeur de LoupMale
 	 * 
@@ -31,6 +31,11 @@ public class LoupMale extends Loup {
 			boolean isHealthy) {
 		super(name, poids, taille, age, isHungry, isSleeping, isHealthy);
 		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void dominer(Loup loup){
+		
 	}
 
 }

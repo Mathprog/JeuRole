@@ -9,7 +9,7 @@ package univ.lp.da2i.java.zoo;
  * @see FemaleMammifere
  *
  */
-public class LoupFemale extends Loup implements FemaleMammifere{
+public abstract class LoupFemale extends Loup implements FemaleMammifere, Dominable{
 	/**
 	 * Constructeur de LoupFemale
 	 * 
@@ -41,6 +41,11 @@ public class LoupFemale extends Loup implements FemaleMammifere{
 	@Override
 	public void mettreBas() {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void dominer(Loup loup){
 		
 	}
 

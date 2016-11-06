@@ -5,6 +5,6 @@ package univ.lp.da2i.java.zoo;
  * @author Administrateur
  *
  */
-public interface LoupAlpha {
+public interface LoupAlpha{
 
 }
