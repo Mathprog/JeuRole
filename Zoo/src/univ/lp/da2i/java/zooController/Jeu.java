@@ -19,6 +19,7 @@ import univ.lp.da2i.java.zooModel.Voliere;
 import univ.lp.da2i.java.zooModel.Zoo;
 import univ.lp.da2i.java.zooVue.GUIAquarium;
 import univ.lp.da2i.java.zooVue.GUIEnclos;
+import univ.lp.da2i.java.zooVue.GUIVoliere;
 
 public class Jeu {
 	
@@ -104,5 +105,8 @@ public class Jeu {
 		
 		GUIAquarium affichageAquarium = new GUIAquarium();
 		affichageAquarium.afficherAquariumCarac(baleineAquarium);
+		
+		GUIVoliere affichageVoliere = new GUIVoliere();
+		affichageVoliere.afficherAquariumCarac(aigleVoliere);
 	}
 }
