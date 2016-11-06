@@ -2,6 +2,8 @@ package univ.lp.da2i.java.zooController;
 
 import java.util.Scanner;
 
+import univ.lp.da2i.java.zooModel.Animal;
+import univ.lp.da2i.java.zooModel.Employe;
 import univ.lp.da2i.java.zooModel.Zoo;
 
 public class Jeu {
@@ -23,7 +25,7 @@ public class Jeu {
 		System.out.println("C'est parti. Donnez un nom à votre ZOO :");
 		Scanner in = new Scanner(System.in);
 		String zooName = in.nextLine();
-		Zoo zoo = new Zoo(zooName, 10);
+		Zoo<Animal> zoo = new Zoo<Animal>(zooName, 10);
 		System.out.println("Votre Zoo : " + zooName + " à été crée. Maintenant il faut lui attribuer un employé.");
 		System.out.println("Nom de votre emplyé : ");
 		String employeName = in.nextLine();
@@ -48,9 +50,15 @@ public class Jeu {
 			sexe="D, la réponse D";
 			break;
 			default:
-				sexe ="Il se fou de moi ...";
+				sexe ="Tu te fou de moi ...";
 				break;
 		}
 		System.out.println(sexe);
+		System.out.println("Saisissez un âge, n'importe lequel :");
+		int age = in.nextInt();
+		System.out.println(age);
+		Employe<Animal> employe = new Employe<Animal>(employeName, sexe, age);
+		System.out.println("Votre eployé " + employe +" à été crée");
+		zoo.setEmploye(employe);
 	}
 }

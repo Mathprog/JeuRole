@@ -1,6 +1,11 @@
 package univ.lp.da2i.java.zooModel;
 
 public class Employe <T extends Animal>{
+	@Override
+	public String toString() {
+		return "Employe [nom=" + nom + ", sexe=" + sexe + ", age=" + age + "]";
+	}
+
 	private String nom;
 	private String sexe;
 	private int age;
