@@ -3,6 +3,9 @@ package univ.lp.da2i.java.zooController;
 import java.util.Scanner;
 
 import univ.lp.da2i.java.zooModel.Animal;
+import univ.lp.da2i.java.zooModel.Aquarium;
+import univ.lp.da2i.java.zooModel.Baleine;
+import univ.lp.da2i.java.zooModel.BaleineMale;
 import univ.lp.da2i.java.zooModel.Employe;
 import univ.lp.da2i.java.zooModel.Enclos;
 import univ.lp.da2i.java.zooModel.Ours;
@@ -67,9 +70,19 @@ public class Jeu {
 		System.out.println("Nous allons maintenant générer votre environnement de départ. Veuillez patientez..");
 		Enclos<Ours> enclosOurs = new Enclos<Ours>("Ours", 500.0, 12, 0, Enclos.PROPRETES[0]);
 		OursMale grours = new OursMale("Grartin Grevot", 450.0, 2.10, 12, false, true, true);
-		OursFemale groursone = new OursFemale ("Gartine Groche", 450.0, 2.10, 12, false, true, true);
+		OursFemale groursone = new OursFemale ("Gartine Groche", 400.0, 1.90, 11, false, true, true);
 		enclosOurs.addAnimal(groursone);
 		enclosOurs.addAnimal(grours);
 		zoo.addEnclos(enclosOurs);
+		
+		Aquarium<Baleine> baleineAquarium = new Aquarium<Baleine>("Baleine", 1000.0, 12, 0, Enclos.PROPRETES[0], 220.0, Aquarium.SALINITEVALUE[0]);
+		BaleineMale unBaleine = new BaleineMale ("BigBog", 1003.0, 3.0, 9, false, true, true);
+		BaleineMale uneBaleine = new BaleineMale ("BigBaga", 950.0, 2.7, 10, false, true, true);
+		
+		baleineAquarium.addAnimal(unBaleine);
+		baleineAquarium.addAnimal(uneBaleine);
+		zoo.addEnclos(baleineAquarium);
+
+		
 	}
 }
