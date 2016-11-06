@@ -17,17 +17,9 @@ public class Meute {
 	 * nom de la meute
 	 */
 	private String nom;
-	/**
-	 * le loup male apha de la meute
-	 */
-	private LoupMaleAlpha loupMaleAlpha;
-	/**
-	 * la louve alpha de la meute
-	 */
-	private LoupFemaleAlpha loupFemaleALpha;
-	/**
-	 * la liste des loups beta de la meute
-	 */
+	
+	private CoupleLoupAlpha coupleAlpha;
+	
 	private ArrayList<LoupBeta> loupsBeta;
 	/**
 	 * la liste des loups omega de la meute
@@ -93,31 +85,17 @@ public class Meute {
 	 * retourne le loup male alpha de la meute
 	 * @return le loup male alpha, sous la forme d'une object LoupMaleAlpha
 	 */
-	public LoupMaleAlpha getLoupMaleAlpha() {
-		return loupMaleAlpha;
+	public CoupleLoupAlpha getCoupleAlpha() {
+		return this.coupleAlpha;
 	}
 	/**
 	 * @param loupMaleAlpha
 	 * 		le nouveau loup male alpha de la meute
 	 */
-	public void setLoupMaleAlpha(LoupMaleAlpha loupMaleAlpha) {
-		this.loupMaleAlpha = loupMaleAlpha;
-	}
-	/**
-	 * retourne la louve alpha de la meute
-	 * @return la louve alpha, sous la forme d'une object LoupFemaleAlpha
-	 */
-	public LoupFemaleAlpha getLoupFemaleALpha() {
-		return loupFemaleALpha;
+	public void setCoupleAlpha(CoupleLoupAlpha coupleAlpha) {
+		this.coupleAlpha = coupleAlpha;
 	}
 	
-	/**
-	 * @param loupFemaleALpha
-	 * 		le nouveau loup femmelle alpha de la meute
-	 */
-	public void setLoupFemaleALpha(LoupFemaleAlpha loupFemaleALpha) {
-		this.loupFemaleALpha = loupFemaleALpha;
-	}
 	/**
 	 * retourne la liste des loups beta de la meute
 	 * @return  la liste des loups beta de la meute, sous la forme d'une liste de LoupBeta
