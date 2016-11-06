@@ -65,7 +65,10 @@ public abstract class Loup extends Predateurs {
 	 * fait veillir le loup
 	 */
 	public void vieillir(){
-		
+		this.age++;
+		if(age > 20){
+			System.out.println("Le loup meurt de vieillesse ...");
+		}
 	}
 	/**
 	 * retourne les informations du loup
@@ -120,5 +123,10 @@ public abstract class Loup extends Predateurs {
 		System.out.println("Je change l'etat de l'animal");
 		this.setSleeping(b);
 	}
+	
+	public void entendreHurlement(String hurlement){
+		System.out.println("J'entends un hurlement !! " + hurlement);
+	}
+	
 
 }
