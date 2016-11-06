@@ -39,9 +39,9 @@ public class Voliere <T extends Oiseau> extends Enclos<T>{
 	 * @param hauteur
 	 * 		la hauteur de la voliere
 	 */
-	public Voliere(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
+	public Voliere(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents,
 			String propreteDegres, int hauteur) {
-		super(nom, superficie, maxAnimaux, nbDAnimauxPresents, allAnimals, propreteDegres);
+		super(nom, superficie, maxAnimaux, nbDAnimauxPresents, propreteDegres);
 		this.hauteur = hauteur;
 		}
 	/**

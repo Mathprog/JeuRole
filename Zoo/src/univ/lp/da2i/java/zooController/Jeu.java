@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import univ.lp.da2i.java.zooModel.Animal;
 import univ.lp.da2i.java.zooModel.Employe;
+import univ.lp.da2i.java.zooModel.Enclos;
+import univ.lp.da2i.java.zooModel.Ours;
+import univ.lp.da2i.java.zooModel.OursFemale;
+import univ.lp.da2i.java.zooModel.OursMale;
 import univ.lp.da2i.java.zooModel.Zoo;
 
 public class Jeu {
@@ -60,5 +64,9 @@ public class Jeu {
 		Employe<Animal> employe = new Employe<Animal>(employeName, sexe, age);
 		System.out.println("Votre eployé " + employe +" à été crée");
 		zoo.setEmploye(employe);
+		System.out.println("Nous allons maintenant générer votre environnement de départ. Veuillez patientez..");
+		Enclos<Ours> enclosOurs = new Enclos<Ours>("Ours", 500.0, 12, 0, Enclos.PROPRETES[0]);
+		OursMale grours = new OursMale("Grartin Grevot", 450.0, 2.10, 12, false, true, true);
+		OursFemale groursone = new OursFemale ("Grartin Grevot", 450.0, 2.10, 12, false, true, true);
 	}
 }

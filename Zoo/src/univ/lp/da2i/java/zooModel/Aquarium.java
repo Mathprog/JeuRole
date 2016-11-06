@@ -54,9 +54,9 @@ public class Aquarium <T extends AnimalMarin> extends Enclos<T>{
 	 * @param salinite
 	 * 		le degre de salinite de l'aquarium
 	 */
-	public Aquarium(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
+	public Aquarium(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents,
 			String propreteDegres, double profondeur, String salinite) {
-		super(nom, superficie, maxAnimaux, nbDAnimauxPresents, allAnimals, propreteDegres);
+		super(nom, superficie, maxAnimaux, nbDAnimauxPresents, propreteDegres);
 		this.profondeur = profondeur;
 		this.salinite = salinite;
 		}

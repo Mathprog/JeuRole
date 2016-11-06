@@ -63,14 +63,14 @@ public class Enclos <T extends Animal> {
 	 * 		le degre de proprete de l'enclos
 	 */
 	
-	public Enclos(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents, ArrayList<T> allAnimals,
+	public Enclos(String nom, double superficie, int maxAnimaux, int nbDAnimauxPresents,
 			String propreteDegres) {
 		super();
 		this.nom = nom;
 		this.superficie = superficie;
 		this.maxAnimaux = maxAnimaux;
 		this.nbDAnimauxPresents = nbDAnimauxPresents;
-		this.allAnimals = allAnimals;
+		this.allAnimals = new ArrayList<T>();
 		this.propreteDegres = propreteDegres;
 	}
 
